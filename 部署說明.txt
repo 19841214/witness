@@ -1,0 +1,12 @@
+靜態網站拆分最佳化包（由 static-site-bundler v1.1 自動封裝）
+==================================================
+- index.html            主頁面（已清除 Canvas 注入腳本並自動補齊空值防護，媒體改採相對路徑按需載入）
+- assets/images/        102 張去重圖片檔
+- assets/audio/voice/   0 支語音檔（WAV 已轉 64k MP3）
+- assets/audio/bgm/     106 支背景音樂檔
+- _headers              Netlify / Cloudflare Pages 靜態快取設定
+
+【部署方式】
+1. Netlify Drop：解壓縮後將整個資料夾拖曳至 https://app.netlify.com/drop
+2. ezPage / GitHub Pages：解壓縮後保留完整目錄結構上傳即可。
+3. 本機測試：解壓縮後直接雙擊 index.html 即可在瀏覽器執行。
